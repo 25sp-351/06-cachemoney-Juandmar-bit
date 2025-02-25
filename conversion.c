@@ -62,8 +62,6 @@ char* convert_to_text (int value) {
 
     to_dollar(dollars, cents);
 
-    printf("%d = %s\n", value, DOLLAR_TEXT);
-
     char* dollar_value = malloc(MAX_CHAR * sizeof(char));
     if (dollar_value == NULL) {
         perror("Failed to allocate memory");

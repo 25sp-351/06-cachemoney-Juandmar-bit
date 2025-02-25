@@ -35,6 +35,7 @@ void process_input(const char *input){
             return;
         }
         char* string_value  = convert_to_text(value);
+        printf("%d = %s \n", value, string_value);
         add_value(value, string_value);
         free(string_value);
 
